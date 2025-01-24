@@ -9,13 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="nav nav-tabs d-flex justify-content-between">
-        <div>
-            <i class="fa-brands fa-instagram"></i>
-            <h1>Instagram</h1>
+    <div class="nav nav-tabs d-flex">
+        <div class="d-flex p-2">
+            <span class="display-6 container"><i class="fa-brands fa-instagram"></i></span>
+            <h1 class="container">Instagram</h1>
         </div>
-        <div>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Create a new post</button>
+        <div class="d-flex col justify-content-end p-2">
+            <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#myModal">Create a new post</button>
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -46,6 +46,167 @@
                 <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
             </ul>
         </div>
+    </div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#grid"><i class="fa-solid fa-table-cells"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#column"><i class="fa-solid fa-square"></i></a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="grid" class="container tab-pane ">
+            <div class="d-grid">
+                    <div class="row h-50 g-2">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/0-16j3lneLSJpBY7_gv9WgKFpLKOJai_5iqdtRfHj08/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dG9kb2N1YmEub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE3/LzA1LzgwMHB4LU1h/dGFuemFzX3VuZF9W/YXJhZGVyb19OQVNB/X1dvcmxkX1dpbmRf/R2xvYmUtR05VLUdl/bmVyYWwtUHVibGlj/LUxpY2Vuc2UuanBn" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/1XoRX2Vwz1GkLpYN3Nq1TMyccAYqx-l4ddhu9mEIgRo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy84/Lzg4L0Nhc2FfZGVf/RWxfQ2Fwb25lX2Vu/X1ZhcmFkZXJvLF9N/YXRhbnphcy5KUEc" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/iWxawqxaSbtAee0Jq02AjJWj8YAlxAZM_swnM-0s2E4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA2/NTE1NTM2OC9waG90/by9jYXJpYmJlYW4t/YmVhY2guanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVplTk1h/Q1BFV0Jhc3FFSDZx/c2xRc1VxOXhqLW84/YndwWnBKWkdzaWlN/aFE9" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/QUk5PQMn7wt7cUl-r2VJVMgrBE-tszdQIlbNHHnszZ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9jYXJydWFqZS10/YXhpLXRpcmFkby1j/YWJhbGxvcy1jYWxs/ZS12YXJhZGVyby1j/dWJhXzY2NDgyNS00/NjIuanBnP3NlbXQ9/YWlzX2h5YnJpZA" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/5JM6jj7TEAEDI-hARYAG7jNR-lJ2Fbhk2zZgqVdigpQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcmNo/aXZvLnByZW5zYS1s/YXRpbmEuY3Uvd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMDQv/UGxhemEtT2FzaXMt/VmFyYWRlcm8tQ3Vi/YS5qcGc" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/4EB_AygU-JjViLM-mUgztTdw0N-PfqvTp9f-WsYHkhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZmLzcy/L2Q0LzZmNzJkNDYy/NmVlNzA4ZWNkODUy/YWY3OTM5MTMxN2Jm/LmpwZw" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/x80K7s88febg4WIzrH0kgBazLChDCvGwIWHGDZy-0zM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAx/MzI4OTIvZXMvZm90/by9jdWJhLW1hdGFu/emFzLXByb3ZpbmNl/LXZhcmFkZXJvLWJl/YWNoLWhvdGVscy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/QnV1dXQyOWI3VXFm/SE1mTUx3OUtNOVA0/OFRYSDRlc3BoTHhU/dkVZYVE5VT0" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/5epNC52ZSdXV7QKuDzriuFXJ-Xk5Y-J_ro_UVljuNsY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWM5LmRlcG9zaXRw/aG90b3MuY29tLzEw/MDc5NjMvMTA4Ni9p/LzQ1MC9kZXBvc2l0/cGhvdG9zXzEwODYw/MTgyLXN0b2NrLXBo/b3RvLXZhcmFkZXJv/LWJlYWNoLWluLWN1/YmEtcGhvdG9ncmFw/aGVkLmpwZw" alt="">
+                        <img class="col-md-4 d-block h-75" src="https://imgs.search.brave.com/gVJyErrQDXjfvZiaPHKsESV3AJx8i1eo0J2MirEQ15k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODUz/OTAzMjEwL2VzL2Zv/dG8vY3ViYS1tYXBh/LXRvcG9nciVDMyVB/MWZpY28tZGUtcmVu/ZGVyLTNkLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz05aGZT/ZjI4VHgwZmZBMktD/UXUxSmk5U2xlQ29s/elFTR2t6V21QNjdY/MWNJPQ" alt="">
+                    </div>
+            </div>
+        </div>
+        <div id="column" class="container tab-pane">
+            <div class="d-flex flex-column justify-content-center align-items-center" >
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Bandera Cubana</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img " style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/aPdL767iM5QS_d9NG30TjDqWFjzSB8q4n3P-M5V9omk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU5/MTM0NzIyL2VzL2Zv/dG8vY3ViYS1oYXZh/bmEtZm9ydGFsZXph/LWRlLXNhbi1jYXJs/b3MtZGUtbGEtY2Fi/YW5hLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz0xQXg0azJP/QmtxSU9aWUlNbFpp/NGZOcU1Ccmp6N2E2/LTV5bm4zOWdEWTZJ/PQ" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Playa atravez de la Uva Caleta</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/iWxawqxaSbtAee0Jq02AjJWj8YAlxAZM_swnM-0s2E4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA2/NTE1NTM2OC9waG90/by9jYXJpYmJlYW4t/YmVhY2guanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVplTk1h/Q1BFV0Jhc3FFSDZx/c2xRc1VxOXhqLW84/YndwWnBKWkdzaWlN/aFE9" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Coche Hicacos a caballo</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/QUk5PQMn7wt7cUl-r2VJVMgrBE-tszdQIlbNHHnszZ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9jYXJydWFqZS10/YXhpLXRpcmFkby1j/YWJhbGxvcy1jYWxs/ZS12YXJhZGVyby1j/dWJhXzY2NDgyNS00/NjIuanBnP3NlbXQ9/YWlzX2h5YnJpZA" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Centro Oasis Gaviota-Varadero</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/5JM6jj7TEAEDI-hARYAG7jNR-lJ2Fbhk2zZgqVdigpQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcmNo/aXZvLnByZW5zYS1s/YXRpbmEuY3Uvd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMDQv/UGxhemEtT2FzaXMt/VmFyYWRlcm8tQ3Vi/YS5qcGc" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Puentes hacia la playa</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/4EB_AygU-JjViLM-mUgztTdw0N-PfqvTp9f-WsYHkhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZmLzcy/L2Q0LzZmNzJkNDYy/NmVlNzA4ZWNkODUy/YWY3OTM5MTMxN2Jm/LmpwZw" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Hotel Gran Memories -Varadero</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/x80K7s88febg4WIzrH0kgBazLChDCvGwIWHGDZy-0zM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAx/MzI4OTIvZXMvZm90/by9jdWJhLW1hdGFu/emFzLXByb3ZpbmNl/LXZhcmFkZXJvLWJl/YWNoLWhvdGVscy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/QnV1dXQyOWI3VXFm/SE1mTUx3OUtNOVA0/OFRYSDRlc3BoTHhU/dkVZYVE5VT0" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Playa Varadero</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/5epNC52ZSdXV7QKuDzriuFXJ-Xk5Y-J_ro_UVljuNsY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWM5LmRlcG9zaXRw/aG90b3MuY29tLzEw/MDc5NjMvMTA4Ni9p/LzQ1MC9kZXBvc2l0/cGhvdG9zXzEwODYw/MTgyLXN0b2NrLXBo/b3RvLXZhcmFkZXJv/LWJlYWNoLWluLWN1/YmEtcGhvdG9ncmFw/aGVkLmpwZw" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Cuba en el mapa</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/gVJyErrQDXjfvZiaPHKsESV3AJx8i1eo0J2MirEQ15k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODUz/OTAzMjEwL2VzL2Zv/dG8vY3ViYS1tYXBh/LXRvcG9nciVDMyVB/MWZpY28tZGUtcmVu/ZGVyLTNkLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz05aGZT/ZjI4VHgwZmZBMktD/UXUxSmk5U2xlQ29s/elFTR2t6V21QNjdY/MWNJPQ" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Calle 13 - Varadero</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/1XoRX2Vwz1GkLpYN3Nq1TMyccAYqx-l4ddhu9mEIgRo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy84/Lzg4L0Nhc2FfZGVf/RWxfQ2Fwb25lX2Vu/X1ZhcmFkZXJvLF9N/YXRhbnphcy5KUEc" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 500px;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Varadero-CUBA</h5>
+                        <span>24/01</span>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" style="height: 400px; object-fit: cover;" src="https://imgs.search.brave.com/0-16j3lneLSJpBY7_gv9WgKFpLKOJai_5iqdtRfHj08/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dG9kb2N1YmEub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE3/LzA1LzgwMHB4LU1h/dGFuemFzX3VuZF9W/YXJhZGVyb19OQVNB/X1dvcmxkX1dpbmRf/R2xvYmUtR05VLUdl/bmVyYWwtUHVibGlj/LUxpY2Vuc2UuanBn" alt="">
+                    </div>
+                    <div class="card-footer p-1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Maiores nobis qui mollitia cum labore tempora earum rerum provident tempore iusto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./btn.js"></script>
 </body>
 </html>
